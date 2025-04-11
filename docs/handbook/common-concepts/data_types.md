@@ -56,3 +56,34 @@ Carbon - строго типизированный язык, где каждый
     }
     var origin: Point = {x: 0.0, y: 0.0};
     ```
+
+### Указатели и ссылки (Pointers & References):
+
+- Сырые указатели (T*):
+  Используются для низкоуровневых операций (требует осторожности).
+  ```carbon
+  var num: i32 = 42;
+  var ptr: i32* = &num;
+  ```
+- Умные указатели:
+  Например, `Box<T>` для данных в куче (управление памятью через RAII).
+  ```carbon
+  var boxedValue: Box<i32> = Box.new(100);
+  ```
+### Специальные типы 
+- `Option<T>`:
+  Обработка отсутствующих значений (аналог `Optional` в Swift или `std::optional` в C++).
+  ```carbon
+  var maybeNumber: Option<i32> = Option.none();
+  maybeNumber = Option.some(10);
+  ```
+- `Result<T, E>`:
+  Для обработки ошибок вместо исключений. Содержит либо успешный результат (`Ok`), либо ошибку (`Err`).
+  ```carbon
+  fn divide(a: f64, b: f64) -> Result<f64, String> {
+    if (b == 0.0) {
+      return Result.Err("Division by zero");
+    }
+    return Result.Ok(a / b);
+  }
+  ```

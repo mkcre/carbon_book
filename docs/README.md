@@ -9,18 +9,8 @@ actions:
 features:
   - title: the-carbon-language
     link: /the-carbon-language
-    details: Minimal setup with markdown-centered project structure helps you focus on wri
-  - title: [introduction]
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: [guessing_game]
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: [installation]
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site. 
-  - title: [hello_world]
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+    details: Начать читать справочник по языку Carbon
 ---
-    here write the main things about carbon and add a button "getting-started"
-    that will lead to handbook.md, there will be the handbook of itself
 [the-carbon-language]: /about_carbon.html/
 
 [foreword]: /handbook/foreword.html/

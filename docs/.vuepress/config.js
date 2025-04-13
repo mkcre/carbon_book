@@ -7,9 +7,9 @@ export default defineUserConfig({
 
   title: 'Miaku Carbon',
   description: 'The Handbook Carbon-lang',
-
+  base: '/carbon_book/',
   theme: defaultTheme({
-    base: '/carbon_book/',
+    
     navbar: [
       {
         text: 'Handbook Carbon',

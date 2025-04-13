@@ -10,7 +10,6 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     base: '/carbon_book/',
-    logo: 'https://vuejs.press/images/hero.png',
     navbar: [
       {
         text: 'Handbook Carbon',

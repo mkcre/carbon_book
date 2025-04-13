@@ -29,5 +29,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PAT }}
-          publish_dir: docs/.vuepress/dist  # путь к билду
+          publish_dir: .vuepress/dist  # путь к билду
           keep_files: false

@@ -9,7 +9,7 @@ export default defineUserConfig({
   description: 'The Handbook Carbon-lang',
 
   theme: defaultTheme({
-    base: "/carbon_book/",
+    base: '/carbon_book/',
     logo: 'https://vuejs.press/images/hero.png',
     navbar: [
       {

@@ -10,7 +10,7 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     base: '/carbon_book/',
-    dest: 'dist',
+    dest: 'public',
     logo: 'https://vuejs.press/images/hero.png',
     navbar: [
       {

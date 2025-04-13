@@ -9,6 +9,7 @@ export default defineUserConfig({
   description: 'The Handbook Carbon-lang',
 
   theme: defaultTheme({
+    base: "/carbon_book/",
     logo: 'https://vuejs.press/images/hero.png',
     navbar: [
       {
@@ -28,10 +29,6 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 })
-
-export default {
-  base: 'carbon_book',
-}
 
 
 

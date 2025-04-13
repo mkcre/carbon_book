@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.21" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Miaku Carbon</title><meta name="description" content="The Handbook Carbon-lang">
+    <link rel="preload" href="/assets/style-DQl60X9y.css" as="style"><link rel="stylesheet" href="/assets/style-DQl60X9y.css">
+    <link rel="modulepreload" href="/assets/app-D8TzdTQy.js"><link rel="modulepreload" href="/assets/functions.html-DQuVbL98.js">
+    <link rel="prefetch" href="/assets/index.html-DWgsXnr1.js" as="script"><link rel="prefetch" href="/assets/handbook.html-BkahNkN0.js" as="script"><link rel="prefetch" href="/assets/index.html-D6ZQpi39.js" as="script"><link rel="prefetch" href="/assets/about_carbon.html-UjtdUgac.js" as="script"><link rel="prefetch" href="/assets/foreword.html-BIec3UuZ.js" as="script"><link rel="prefetch" href="/assets/guessing_game.html-BMmhnHq1.js" as="script"><link rel="prefetch" href="/assets/introduction.html-CciAKqom.js" as="script"><link rel="prefetch" href="/assets/index.html-or2TtdsP.js" as="script"><link rel="prefetch" href="/assets/control_flow.html-DhsbegJE.js" as="script"><link rel="prefetch" href="/assets/data_types.html-Dr4-qU5C.js" as="script"><link rel="prefetch" href="/assets/variables_and_mutability.html-BkAY9qJA.js" as="script"><link rel="prefetch" href="/assets/index.html-1zg2Dvu6.js" as="script"><link rel="prefetch" href="/assets/installation.html-Cy1vjwu2.js" as="script"><link rel="prefetch" href="/assets/structure.html-CigwL1Xv.js" as="script"><link rel="prefetch" href="/assets/guessing_game.html-B78jUB1l.js" as="script"><link rel="prefetch" href="/assets/404.html-14g9ha6k.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><img class="vp-site-logo" src="https://vuejs.press/images/hero.png" alt="Miaku Carbon"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Miaku Carbon</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Handbook Carbon"><!--[--><!--[--><!--]--><!--]-->Handbook Carbon<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="GitHub Carbon"><!--[--><!--[--><!--]--><!--]-->GitHub Carbon<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Handbook Carbon"><!--[--><!--[--><!--]--><!--]-->Handbook Carbon<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="GitHub Carbon"><!--[--><!--[--><!--]--><!--]-->GitHub Carbon<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading"> <!----></p><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><h3 id="функции-functions-в-carbon" tabindex="-1"><a class="header-anchor" href="#функции-functions-в-carbon"><span>Функции (Functions) в Carbon</span></a></h3><p>Функции — это основные строительные блоки программ на Carbon. Они позволяют структурировать код, повторно использовать логику и изолировать задачи. Вот ключевые аспекты работы с функциями:</p><hr><h4 id="_1-объявление-функции" tabindex="-1"><a class="header-anchor" href="#_1-объявление-функции"><span>1. <strong>Объявление функций</strong></span></a></h4><p>Функции объявляются с использованием ключевого слова <code>fn</code>. Синтаксис:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn имя_функции(параметры) -&gt; возвращаемый_тип {</span>
+<span class="line">    // Тело функции</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Пример:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn add(a: i32, b: i32) -&gt; i32 {</span>
+<span class="line">    return a + b;</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_2-параметры-и-аргументы" tabindex="-1"><a class="header-anchor" href="#_2-параметры-и-аргументы"><span>2. <strong>Параметры и аргументы</strong></span></a></h4><ul><li>Параметры указываются в формате <code>имя: тип</code>.</li><li>Передача по значению (по умолчанию) или по ссылке (с использованием <code>&amp;</code>):<div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn increment(x: &amp;i32) -&gt; i32 {</span>
+<span class="line">    return *x + 1;</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><strong>Значения по умолчанию</strong> (если поддерживаются):<div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn greet(name: String = &quot;Гость&quot;) -&gt; String {</span>
+<span class="line">    return &quot;Привет, {name}!&quot;;</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><hr><h4 id="_3-возвращаемые-значения" tabindex="-1"><a class="header-anchor" href="#_3-возвращаемые-значения"><span>3. <strong>Возвращаемые значения</strong></span></a></h4><ul><li>Указывается после <code>-&gt;</code>. Если функция не возвращает значение, тип опускается:<div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn logMessage(text: String) {</span>
+<span class="line">    Print(text);</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><strong>Ключевое слово <code>return</code></strong>: <ul><li>Если <code>return</code> отсутствует, функция возвращает результат последнего выражения в блоке:<div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn square(x: i32) -&gt; i32 {</span>
+<span class="line">    x * x // Неявный возврат</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul></li></ul><hr><h4 id="_4-область-видимости" tabindex="-1"><a class="header-anchor" href="#_4-область-видимости"><span>4. <strong>Область видимости</strong></span></a></h4><ul><li>Функции объявляются на уровне модуля или внутри структур/классов.</li><li><strong>Вложенные функции</strong> (если поддерживаются):<div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn outer() {</span>
+<span class="line">    fn inner() { // Функция внутри outer</span>
+<span class="line">        Print(&quot;Вложенная&quot;);</span>
+<span class="line">    }</span>
+<span class="line">    inner();</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><hr><h4 id="_5-перегрузка-функции-overloading" tabindex="-1"><a class="header-anchor" href="#_5-перегрузка-функции-overloading"><span>5. <strong>Перегрузка функций (Overloading)</strong></span></a></h4><p>Carbon не поддерживает перегрузку функций на уровне имени. Для разных сигнатур используются уникальные имена:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn multiplyInt(a: i32, b: i32) -&gt; i32 { ... }</span>
+<span class="line">fn multiplyFloat(a: f64, b: f64) -&gt; f64 { ... }</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_6-методы-функции-структур-и-классов" tabindex="-1"><a class="header-anchor" href="#_6-методы-функции-структур-и-классов"><span>6. <strong>Методы (Функции структур и классов)</strong></span></a></h4><p>Функции могут быть привязаны к типам данных (например, структурам):</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">struct Vector {</span>
+<span class="line">    x: f64,</span>
+<span class="line">    y: f64,</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">impl Vector {</span>
+<span class="line">    fn length(self) -&gt; f64 {</span>
+<span class="line">        return Math.sqrt(self.x * self.x + self.y * self.y);</span>
+<span class="line">    }</span>
+<span class="line">}</span>
+<span class="line"></span>
+<span class="line">// Использование:</span>
+<span class="line">let vec = Vector { x: 3.0, y: 4.0 };</span>
+<span class="line">Print(vec.length()); // 5.0</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_7-обработка-ошибок" tabindex="-1"><a class="header-anchor" href="#_7-обработка-ошибок"><span>7. <strong>Обработка ошибок</strong></span></a></h4><p>Вместо исключений часто используется тип <code>Result&lt;T, E&gt;</code> (как в разделе Data Types):</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn parseNumber(s: String) -&gt; Result&lt;i32, String&gt; {</span>
+<span class="line">    // Попытка преобразования строки в число</span>
+<span class="line">    if (s.isNumeric()) {</span>
+<span class="line">        return Result.Ok(s.to_i32());</span>
+<span class="line">    } else {</span>
+<span class="line">        return Result.Err(&quot;Ошибка преобразования&quot;);</span>
+<span class="line">    }</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_8-рекурсия" tabindex="-1"><a class="header-anchor" href="#_8-рекурсия"><span>8. <strong>Рекурсия</strong></span></a></h4><p>Carbon поддерживает рекурсивные вызовы:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn factorial(n: i32) -&gt; i32 {</span>
+<span class="line">    if (n &lt;= 1) {</span>
+<span class="line">        return 1;</span>
+<span class="line">    }</span>
+<span class="line">    return n * factorial(n - 1);</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_9-анонимные-функции-лямбды" tabindex="-1"><a class="header-anchor" href="#_9-анонимные-функции-лямбды"><span>9. <strong>Анонимные функции (Лямбды)</strong></span></a></h4><p>Если Carbon поддерживает лямбда-выражения, синтаксис может быть похож на:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">let sum = fn (a: i32, b: i32) -&gt; i32 { a + b };</span>
+<span class="line">Print(sum(2, 3)); // 5</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="_10-точка-входа-функция-main" tabindex="-1"><a class="header-anchor" href="#_10-точка-входа-функция-main"><span>10. <strong>Точка входа: функция <code>main</code></strong></span></a></h4><p>Программа начинается с выполнения <code>main</code>:</p><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">fn main() -&gt; {</span>
+<span class="line">    Print(&quot;Запуск программы&quot;);</span>
+<span class="line">    let result = add(5, 3);</span>
+<span class="line">    Print(result); // 8</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><h4 id="особенности-функции-в-carbon" tabindex="-1"><a class="header-anchor" href="#особенности-функции-в-carbon"><span>Особенности функций в Carbon:</span></a></h4><ul><li><strong>Четкая типизация</strong>: Все параметры и возвращаемые значения имеют явные типы.</li><li><strong>Иммутабельность по умолчанию</strong>: Параметры передаются как константы, если не указано иное (например, через <code>&amp;mut</code> для изменяемых ссылок).</li><li><strong>Нет неявных преобразований</strong>: Типы аргументов должны точно совпадать с ожидаемыми.</li></ul><hr><h4 id="пример-комплекснои-функции" tabindex="-1"><a class="header-anchor" href="#пример-комплекснои-функции"><span>Пример комплексной функции:</span></a></h4><div class="language-carbon line-numbers-mode" data-highlighter="prismjs" data-ext="carbon"><pre><code><span class="line">// Расчет среднего значения массива</span>
+<span class="line">fn average(values: [f64]) -&gt; Option&lt;f64&gt; {</span>
+<span class="line">    if (values.isEmpty()) {</span>
+<span class="line">        return Option.none();</span>
+<span class="line">    }</span>
+<span class="line">    var sum: f64 = 0.0;</span>
+<span class="line">    for (var v in values) {</span>
+<span class="line">        sum += v;</span>
+<span class="line">    }</span>
+<span class="line">    return Option.some(sum / values.size());</span>
+<span class="line">}</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><hr><p>Функции в Carbon сочетают гибкость с безопасностью, что делает их мощным инструментом для создания надежных приложений.</p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated:: </span><time class="meta-item-info" datetime="2025-04-12T13:56:29.000Z" data-allow-mismatch>4/12/25, 1:56 PM</time></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: fantom_play13@mail.ru">Kuroi</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: 99949382+mkcre@users.noreply.github.com">mkcre</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-D8TzdTQy.js" defer></script>
+  </body>
+</html>

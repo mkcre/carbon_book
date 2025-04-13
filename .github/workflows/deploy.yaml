@@ -30,3 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./docs/.vuepress/dist  # путь к билду
+          keep_files: false

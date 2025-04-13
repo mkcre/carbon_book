@@ -28,3 +28,10 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 })
+
+module.exports = {
+  base: 'carbon_book',
+}
+
+
+
